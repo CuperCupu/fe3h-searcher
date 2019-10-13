@@ -1,0 +1,29 @@
+<div class="card item">
+    <div class="title">{{item.name}}</div>
+    <div class="content">
+        {% if item.liked_by %}
+            <div class="likes">
+                <div>Liked by:</div>
+                {% for char in item.liked_by %}
+                    <a class="item" href="?query={{char.lower()}}">{{char}}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if item.disliked_by %}
+            <div class="dislikes">
+                <div>Disliked by:</div>
+                {% for char in item.disliked_by %}
+                    <a class="item" href="?query={{char.lower()}}">{{char}}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if item.lost_by %}
+            <div class="lost">
+                <div>Lost by:</div>
+                {% for char in item.lost_by %}
+                    <a class="item" href="?query={{char.lower()}}">{{char}}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <title>Fire Emblem Three Houses</title>
+    </head>
+    <body>
+        <h1 class="title">Fire Emblem Three Houses</h1>
+        <div class="search-form">
+            <form method="GET">
+                <input id="search-query" name="query" value="{{query}}" autofocus/>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        {% for result in results %}
+            {{result}}
+        {% endfor %}
+    </body>
+</html>
+<script type="application/javascript">
+function moveCursorToEnd(el) {
+    'use strict';
+    let index = el.value.length;
+    el.focus();
+    el.select();
+    // el.setSelectionRange(index,index);
+}
+
+moveCursorToEnd(document.getElementById('search-query'));
+</script>

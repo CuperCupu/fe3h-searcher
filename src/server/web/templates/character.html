@@ -1,0 +1,37 @@
+<div class="card character">
+    <div class="title {{character.house}}">{{character.name}}</div>
+    <div class="content">
+        <div class="attributes">
+            {% if character.skill %}
+                <div>{{character.skill}}</div>
+            {% endif %}
+            {% if character.stat %}
+                <div>{{character.stat}}</div>
+            {% endif %}
+        </div>
+        {% if character.flowers + character.favourite_gifts %}
+            <div class="likes">
+                <div>Likes:</div>
+                {% for item in character.flowers + character.favourite_gifts %}
+                    <a class="item" href="?query={{item.lower()}}">{{item}}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if character.disliked_gifts %}
+            <div class="dislikes">
+                <div>Dislikes:</div>
+                {% for item in character.disliked_gifts %}
+                    <a class="item" href="?query={{item.lower()}}">{{item}}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if character.lost_items %}
+            <div class="lost">
+                <div>Lost:</div>
+                {% for item in character.lost_items %}
+                    <a class="item" href="?query={{item.lower()}}">{{item}}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>
