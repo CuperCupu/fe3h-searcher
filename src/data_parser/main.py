@@ -1,12 +1,11 @@
 import argparse
 import json
-from typing import List
 
 import pandas as pd
 
 from data import characters, items
 from .characters_parser import parse_character_sheet
-from .items_parser import aggregate_items, Item
+from .items_parser import aggregate_items
 
 
 def parse_args():

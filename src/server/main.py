@@ -6,7 +6,7 @@ from data.characters import Character
 from data.items import Item
 from .database import Database
 
-db = Database('data.json')
+db = Database(os.environ.get('DATA_SOURCE', 'data.json'))
 
 directory = os.path.split(__file__)[0]
 
