@@ -43,7 +43,7 @@ def home():
     else:
         query = 'rhea'
     if query:
-        search_result = db.search(request.args['query'])
+        search_result = db.search(query)
         if search_result:
             for i in range(min(results_shown, len(search_result))):
                 results.append(search_result[i][1])
