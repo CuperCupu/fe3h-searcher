@@ -43,11 +43,11 @@ class SearchableString:
             score = 0
             for idx, (source, dest) in enumerate(zip(querystring, self.texts[i:])):
                 scored = self.score(source, dest, self.excess[idx])
-                if scored:
-                    score += scored
-                else:
+                if scored is None:
                     score = infinite
                     continue
+                else:
+                    score += scored
             if lowest > score:
                 lowest = score
         return lowest

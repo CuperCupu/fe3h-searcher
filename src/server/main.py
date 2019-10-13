@@ -38,7 +38,10 @@ def search():
 @app.route('/')
 def home():
     results = []
-    query = request.args['query']
+    if 'query' in request.args:
+        query = request.args['query']
+    else:
+        query = 'rhea'
     if query:
         search_result = db.search(request.args['query'])
         if search_result:

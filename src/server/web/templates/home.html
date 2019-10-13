@@ -17,13 +17,7 @@
     </body>
 </html>
 <script type="application/javascript">
-function moveCursorToEnd(el) {
-    'use strict';
-    let index = el.value.length;
-    el.focus();
-    el.select();
-    // el.setSelectionRange(index,index);
-}
-
-moveCursorToEnd(document.getElementById('search-query'));
+let input = document.getElementById('search-query');
+input.focus();
+input.select();
 </script>
