@@ -31,4 +31,4 @@ docker run -p PORT:8080 fe3h
 ```
 note that `PORT` is the port number you want the server to run on
 
-[source-google-doc]: https://docs.google.com/spreadsheets/d/1PCjGLCeHClMaZ43L-H5h6z5I5oz70NA2R7fNANOcwG0/edit#gid=0
+[source-google-doc]: https://docs.google.com/spreadsheets/d/1PCjGLCeHClMaZ43L-H5h6z5I5oz70NA2R7fNANOcwG0

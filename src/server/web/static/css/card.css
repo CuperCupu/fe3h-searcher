@@ -1,0 +1,33 @@
+.card {
+    background-color: white;
+    margin: 1rem 1rem;
+    border-radius: 0.2rem;
+    /*border: grey solid 1px;*/
+    display: inline-block;
+    vertical-align:top;
+    box-shadow: 1px 3px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card .title {
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+.card .content {
+    padding: 0.5rem;
+}
+
+.card .content div {
+    margin: 0.5rem 0.25rem;
+}
+
+a .card {
+    text-decoration: none;
+    font-style: normal;
+    transition: transform .1s ease-in-out;
+}
+
+a .card:hover {
+    transform: scale(1.1, 1.1);
+}

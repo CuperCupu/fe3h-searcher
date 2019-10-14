@@ -1,10 +1,15 @@
 <html>
     <head>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-        <title>Fire Emblem Three Houses</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/gifts.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/houses.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/card.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+        <title>Gifts Searcher</title>
     </head>
     <body>
-        <h1 class="title">Fire Emblem Three Houses</h1>
+        {% include 'navbar.html' %}
+        <h1 class="center">Gifts Searcher</h1>
         <div class="search-form">
             <form method="GET">
                 <input id="search-query" name="query" value="{{query}}" autofocus/>

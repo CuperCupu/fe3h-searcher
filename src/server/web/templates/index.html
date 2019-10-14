@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/card.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+        <title>Fire Emblem Three Houses</title>
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <h1 class="center">Fire Emblem Three Houses</h1>
+        <p class="center">This is a fan-made web app to help guide you play Fire Emblem Three Houses. All data used in this app is taken from this <a target="_blank" href="https://docs.google.com/spreadsheets/d/1PCjGLCeHClMaZ43L-H5h6z5I5oz70NA2R7fNANOcwG0"><span>spreadsheet</span></a>.</p>
+        <h2 class="center">Applications</h2>
+        <div class="applications">
+            <a href="/gifts"><div class="card">
+                <div class="title">Gifts Searcher</div>
+                <div class="content">
+                    Search for characters favourite gifts and lost items.<br>
+                    Also search which items are liked by which characters. <br>
+                    Also search for the owner of lost items.
+                </div>
+            </div></a>
+        </div>
+    </body>
+</html>

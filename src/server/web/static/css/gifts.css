@@ -1,0 +1,56 @@
+.character .title.black-eagles {
+    background-color: lightcoral;
+}
+
+.character .title.blue-lions {
+    background-color: skyblue;
+}
+
+.character .title.golden-deers {
+    background-color: gold;
+}
+
+.character .title.church {
+    background-color: lightgray;
+}
+
+.character .title.knights {
+    background-color: #eeeeee;
+}
+
+.card.item .title {
+    background-color: #373737;
+    color: white;
+}
+
+.card .item {
+    margin-left: 0.25rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    border: grey solid 1px;
+    display: inline-block;
+}
+
+.likes .item {
+    background-color: lightpink;
+}
+
+.dislikes .item {
+    background-color: lightgray;
+}
+
+.lost .item {
+    background-color: lightskyblue;
+}
+
+.character .attributes div {
+    display: inline-block;
+}
+
+a.item {
+    transition: transform .1s ease-in-out;
+}
+
+a.item:hover {
+    transform: scale(1.1, 1.1);
+}

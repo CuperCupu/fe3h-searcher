@@ -1,4 +1,5 @@
 import json
+import os
 from typing import Union, TypeVar, Generic, List, Tuple
 
 from Levenshtein import distance
@@ -103,3 +104,5 @@ class Database:
         result.sort(key=lambda x: x[0])
         return result
 
+
+db = Database(os.environ.get('DATA_SOURCE', 'data.json'))

@@ -1,8 +1,13 @@
-body {
-    background-color: lightgreen;
+:root {
+    font-family: sans-serif;
 }
 
-.title {
+body {
+    background-color: lightgreen;
+    margin: 0;
+}
+
+.center {
     text-align: center;
 }
 
@@ -22,79 +27,12 @@ body {
     appearance: none;
 }
 
-.card {
-    background-color: white;
-    margin: 1rem 1rem;
-    border-radius: 0.2rem;
-    /*border: grey solid 1px;*/
-    display: inline-block;
-    vertical-align:top;
-    box-shadow: 1px 3px 4px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card .title {
-    padding: 0.5rem;
-    font-weight: bold;
-}
-
-.card .content {
-    padding: 0.25rem;
-}
-
-.card .content div {
-    margin: 0.5rem 0.25rem;
-}
-
-.character .title.black-eagles {
-    background-color: lightcoral;
-}
-
-.character .title.blue-lions {
-    background-color: skyblue;
-}
-
-.character .title.golden-deers {
-    background-color: gold;
-}
-
-.character .title.church {
-    background-color: lightgray;
-}
-
-.character .title.knights {
-    background-color: #eeeeee;
-}
-
-.item .title {
-    background-color: #373737;
-    color: white;
-}
-
-.card .item {
-    margin-left: 0.5rem;
-    padding: 0.25rem;
-    border-radius: 0.25rem;
-    border: grey solid 1px;
-    display: inline-block;
-}
-
-.likes .item {
-    background-color: lightpink;
-}
-
-.dislikes .item {
-    background-color: lightgray;
-}
-
-.lost .item {
-    background-color: lightskyblue;
-}
-
-.character .attributes div {
-    display: inline-block;
-}
-
 a {
     color: black;
     text-decoration: none;
+}
+
+a span {
+    font-style: italic;
+    text-decoration: underline;
 }
